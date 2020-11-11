@@ -1,0 +1,93 @@
+
+<html>
+<head>
+<script>
+function AltaViata()
+{ document.getElementById("numeinviitor").innerHTML = "Ing. Prof. Muresan Adina Stefania";
+	document.body.style.backgroundColor = "#99ccff";
+	document.getElementById("PozaProfil").src="MuresanAdina2.jpg";
+	document.getElementById("PozaProfil").style.opacity = "1";
+	document.getElementById("PozaProfil").style.border = "10px";
+		var tabel = document.getElementById("tabel");
+                tabel.rows[0].cells[0].innerHTML = "Voluntariat";
+                tabel.rows[1].cells[0].innerHTML = "Internship";
+                tabel.rows[2].cells[0].innerHTML = "ERASMUS";
+	
+}
+   function aratavarsta(){
+                    var azi = new Date;
+                    var varstamea;
+                    var anulnasterii = document.getElementById("varsta").innerHTML;
+                    var ancurent = azi.getFullYear();
+
+                    varstamea = ancurent - anulnasterii;
+
+                    document.getElementById("varsta").innerHTML = varstamea;
+
+            }
+</script>
+<style>
+body {
+  background-color: lightblue;
+}
+img {
+  background-color: #FFCCCC;
+  opacity: 0.6;
+  weight: 160px;
+  height: 160px;
+  align: center;
+}
+p.outset {border-style: outset;
+border-color: #FFCCCC;}
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+ul.b {
+  list-style-type: square;
+  
+}
+div {
+  background-color: #FFCCCC;
+  width: 160px;
+  border: 15px ;
+  padding: 50px;
+  margin: 50px;
+  align: center;
+  
+}
+h3.nume { font-family: "Verdana";
+			font-style: italic;
+			font-size: 36px;
+			color: violet;
+}
+</style>
+
+</head>
+<body>
+<h1 id="numeinviitor">Mure&#351;an Adina &#350;tefania</h1>
+<button onclick="AltaViata()"> Alta viata </button>
+<img id="PozaProfil" src="MuresanAdina.jpg">
+<p onmouseover="aratavarsta()" id="varsta">2001</p>
+<p class="serif"><h2> e-mail: Muresan.So.Adina@utcluj.didatec.ro </p>
+<p> data na&#351;terii: 06.05.2001 <p></h2>
+<h2> Citat </h2>
+<p><h3 class="nume"> Educa&#355;ia este cea mai bun&#259; asigurare pentru b&#259;tr&#226;ne&#355;e </h3></p>
+<table id="tabel">
+<tbody>
+<h2>Discipline </h2>
+<tr>
+<td>  <a href=https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf> <p class="outset">Componente si Circuite Eletronice Pasive </p></a> </td>
+</tr>
+<tr>
+<td> <a href=https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3103.pdf> <p class="outset"> Fizica </p> </a></td> </tr>
+<tr><td> <a href=https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3102.pdf> <p class="outset";> Algebra liniara </p></a> </td> </tr>
+</table>
+<br>
+<h1> Hobby-uri </h1>
+<ul class="b"> <h2>
+<li> Citit </li>
+<li> Muzica </li>
+<li>Teatru </li> </h2></ul>
+<a href="catalogcolegi.html">&laquo; Previous</a>
+</body>
+</html>
